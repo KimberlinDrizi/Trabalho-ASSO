@@ -19,6 +19,9 @@ class Controller {
             case 'home':
                 $this->showConteudoInicialView();
                 break;
+	case'novo':
+		$this->showNovo();
+		break;
             case 'login':
                 $this->showTelaLoginView();
                 break;
@@ -35,7 +38,9 @@ class Controller {
     private function showTelaLoginView(){
         include 'view/telaLoginView.php';
     }
-    
+private function showNovo(){
+include 'view/novaprimeira.php';
+    }
     private function showTelaDeLogoutView(){
         $custom = "ahahaha"; //mysql_
         include 'view/telaLogoutView.php';
