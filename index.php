@@ -13,6 +13,7 @@
    } else {
        $controller->invoke();
    }
-?>
+   echo 'ola';
+?> 
     </body>
 </html>
